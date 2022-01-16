@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat-Together</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="before_login">
+        <h1><div id="t3">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="textBienvenu">Let's chat together</div></h1>
+    <div class="before_login" >
+        
+        <div class="inputForm">
+            <div class="textNom">Enter your name:</div>
+       
+            <input type="text" id="yourname" placeholder="Your name.." required/>
+            <div class="btnSend">
+            <button onClick="login()" >Connect</button>
+        </div>
+        
+    </div>
+    
+    </div>
+
+</div>
+
+
+    <div id="after_login" style="display:none">
+        <header>
+            <div id="t2">
+            <img src="logo.png" alt="logo">
+        </div>
+
+            <div id="t2">
+                <h1>You are welcome</h1>
+            </div>
+            <h1 style="text-align: right;padding-right: 50px;" id="your-name" ></h1>
+
+        </header>
+
+        
+	
+    
+    <div class="section">
+        <div class="article">
+            <div class="users users1"> 
+
+
+            </div>
+        </div>
+        <aside class="users_connect" >
+            <div class="txtUserCon">   Users connected now:  <br><br>
+            </div>
+            <div class="listuser listuser1"></div>
+        </aside>
+    </div>
+<!----------------------------------------------------------->
+
+</div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</body>
+</html>
